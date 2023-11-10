@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is auto-generated and is overwritten each time the workflow is saved.
+    The metadata have moved to the `workflow-metadata.xml` file.-->
+<KNIMEMetaInfo nrOfElements="4" xmlns="http://www.knime.org/2.9/metainfo">
+    <element form="text" name="Author" read-only="false">karenabraham</element>
+    <element form="date" name="Creation Date" read-only="false">5/6/2022/12:00:01 +02:00</element>
+    <element form="multiline" name="Comments" read-only="false">There has been no title set for this workflow's metadata.
+
+Remove Non-Business Days
+
+The following is an example of how to remove days that aren't working days. In this workflow we first remove the dates which are on the last two days of the week and then use an API (https://date.nager.at/) to fetch the public holidays of the selected country and filter those out as well. Not all countries are contained, since the public holiday API being used is not complete.
+
+TAGS: business days,dates,filter,holidays,weekends,saturday,sunday</element>
+    <element form="text" name="Last Edited" read-only="true">2023-09-28 16:24:06 -0500</element>
+</KNIMEMetaInfo>
