@@ -8,7 +8,7 @@
         <entry key="authored-by" type="xstring" value="karenabraham"/>
         <entry key="authored-when" type="xstring" value="2022-07-05 12:12:31 +0200"/>
         <entry key="lastEdited-by" type="xstring" value="lcastillo"/>
-        <entry key="lastEdited-when" type="xstring" value="2023-11-10 01:47:01 -0500"/>
+        <entry key="lastEdited-when" type="xstring" value="2023-11-10 01:56:31 -0500"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="CONFIGURED"/>
@@ -23,8 +23,8 @@
             <config key="ui_settings">
                 <config key="extrainfo.node.bounds">
                     <entry key="array-size" type="xint" value="4"/>
-                    <entry key="0" type="xint" value="460"/>
-                    <entry key="1" type="xint" value="524"/>
+                    <entry key="0" type="xint" value="445"/>
+                    <entry key="1" type="xint" value="489"/>
                     <entry key="2" type="xint" value="-1"/>
                     <entry key="3" type="xint" value="-1"/>
                 </config>
@@ -55,8 +55,8 @@
             <config key="ui_settings">
                 <config key="extrainfo.node.bounds">
                     <entry key="array-size" type="xint" value="4"/>
-                    <entry key="0" type="xint" value="735"/>
-                    <entry key="1" type="xint" value="539"/>
+                    <entry key="0" type="xint" value="730"/>
+                    <entry key="1" type="xint" value="559"/>
                     <entry key="2" type="xint" value="-1"/>
                     <entry key="3" type="xint" value="-1"/>
                 </config>
