@@ -35,7 +35,15 @@
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="AdditionalOptions" type="xstring" value=""/>
-        <config key="Keys"/>
+        <config key="Keys">
+            <config key="Key0">
+                <entry key="keyName" type="xstring" value="Key_fecha"/>
+                <config key="keyColumns">
+                    <entry key="Column0" type="xstring" value="key_fecha"/>
+                </config>
+                <entry key="primaryKey" type="xboolean" value="true"/>
+            </config>
+        </config>
         <config key="Columns">
             <config key="Column0">
                 <entry key="columnName" type="xstring" value="is_holiday"/>
@@ -50,78 +58,91 @@
                 <entry key="notNull" type="xboolean" value="false"/>
             </config>
             <config key="Column2">
+                <entry key="columnName" type="xstring" value="key_fecha"/>
+                <entry key="sqlType" type="xstring" value="VARCHAR"/>
+                <entry key="sqlTypeString" type="xstring" value="varchar"/>
+                <entry key="notNull" type="xboolean" value="false"/>
+            </config>
+            <config key="Column3">
                 <entry key="columnName" type="xstring" value="Year"/>
                 <entry key="sqlType" type="xstring" value="INTEGER"/>
                 <entry key="sqlTypeString" type="xstring" value="integer"/>
                 <entry key="notNull" type="xboolean" value="false"/>
             </config>
-            <config key="Column3">
+            <config key="Column4">
                 <entry key="columnName" type="xstring" value="Year (week-based)"/>
                 <entry key="sqlType" type="xstring" value="INTEGER"/>
                 <entry key="sqlTypeString" type="xstring" value="integer"/>
                 <entry key="notNull" type="xboolean" value="false"/>
             </config>
-            <config key="Column4">
+            <config key="Column5">
                 <entry key="columnName" type="xstring" value="Quarter"/>
                 <entry key="sqlType" type="xstring" value="INTEGER"/>
                 <entry key="sqlTypeString" type="xstring" value="integer"/>
                 <entry key="notNull" type="xboolean" value="false"/>
             </config>
-            <config key="Column5">
+            <config key="Column6">
                 <entry key="columnName" type="xstring" value="Month (number)"/>
                 <entry key="sqlType" type="xstring" value="INTEGER"/>
                 <entry key="sqlTypeString" type="xstring" value="integer"/>
                 <entry key="notNull" type="xboolean" value="false"/>
             </config>
-            <config key="Column6">
+            <config key="Column7">
                 <entry key="columnName" type="xstring" value="Month (name)"/>
                 <entry key="sqlType" type="xstring" value="VARCHAR"/>
                 <entry key="sqlTypeString" type="xstring" value="varchar"/>
                 <entry key="notNull" type="xboolean" value="false"/>
             </config>
-            <config key="Column7">
+            <config key="Column8">
                 <entry key="columnName" type="xstring" value="Week"/>
                 <entry key="sqlType" type="xstring" value="INTEGER"/>
                 <entry key="sqlTypeString" type="xstring" value="integer"/>
                 <entry key="notNull" type="xboolean" value="false"/>
             </config>
-            <config key="Column8">
+            <config key="Column9">
                 <entry key="columnName" type="xstring" value="Day of year"/>
                 <entry key="sqlType" type="xstring" value="INTEGER"/>
                 <entry key="sqlTypeString" type="xstring" value="integer"/>
                 <entry key="notNull" type="xboolean" value="false"/>
             </config>
-            <config key="Column9">
+            <config key="Column10">
                 <entry key="columnName" type="xstring" value="Day of month"/>
                 <entry key="sqlType" type="xstring" value="INTEGER"/>
                 <entry key="sqlTypeString" type="xstring" value="integer"/>
                 <entry key="notNull" type="xboolean" value="false"/>
             </config>
-            <config key="Column10">
+            <config key="Column11">
                 <entry key="columnName" type="xstring" value="Day of week (number)"/>
                 <entry key="sqlType" type="xstring" value="INTEGER"/>
                 <entry key="sqlTypeString" type="xstring" value="integer"/>
                 <entry key="notNull" type="xboolean" value="false"/>
             </config>
-            <config key="Column11">
+            <config key="Column12">
                 <entry key="columnName" type="xstring" value="Day of week (name)"/>
                 <entry key="sqlType" type="xstring" value="VARCHAR"/>
                 <entry key="sqlTypeString" type="xstring" value="varchar"/>
                 <entry key="notNull" type="xboolean" value="false"/>
             </config>
-            <config key="Column12">
+            <config key="Column13">
                 <entry key="columnName" type="xstring" value="temporada"/>
                 <entry key="sqlType" type="xstring" value="VARCHAR"/>
                 <entry key="sqlTypeString" type="xstring" value="varchar"/>
                 <entry key="notNull" type="xboolean" value="false"/>
             </config>
         </config>
-        <config key="NameBasedKeys"/>
+        <config key="NameBasedKeys">
+            <config key="Key0">
+                <entry key="namePattern" type="xstring" value="key_fecha"/>
+                <entry key="isRegex" type="xboolean" value="true"/>
+                <entry key="keyName" type="xstring" value="Key__fecha"/>
+                <entry key="primaryKey" type="xboolean" value="true"/>
+            </config>
+        </config>
         <config key="KnimeBasedTypeMapping"/>
         <config key="NameBasedTypeMapping"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.database.node.utility.tablecreator.DBTableCreateNodeFactory2"/>
     <entry key="node-name" type="xstring" value="DB Table Creator"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME database nodes"/>
@@ -147,20 +168,28 @@
         </config>
     </config>
     <entry key="name" type="xstring" value="DB Table Creator"/>
-    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 1096, Cols: 14"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
         <config key="port_2">
             <entry key="index" type="xint" value="2"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBSessionPortObjectSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBSessionPortObject"/>
+            <entry key="port_object_summary" type="xstring" value="PostgreSQL 065a9456-5038-4475-a917-d5fb49f96d6f"/>
+            <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
+            <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
+            <entry key="port_dir_location" type="xstring" value="port_2"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="e3fb4760-e4de-4ae4-acaa-4d398729e5da"/>
     </config>
 </config>

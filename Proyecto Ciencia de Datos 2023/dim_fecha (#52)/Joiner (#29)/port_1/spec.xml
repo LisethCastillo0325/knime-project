@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="spec.xml">
     <entry key="spec_name" type="xstring" value="default"/>
-    <entry key="number_columns" type="xint" value="13"/>
+    <entry key="number_columns" type="xint" value="14"/>
     <config key="column_spec_0">
         <entry key="column_name" type="xstring" value="is_holiday"/>
         <config key="element_names">
@@ -58,6 +58,18 @@
         <config key="meta_data"/>
     </config>
     <config key="column_spec_2">
+        <entry key="column_name" type="xstring" value="key_fecha"/>
+        <config key="element_names">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="column_type">
+            <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+        </config>
+        <config key="column_domain"/>
+        <config key="column_properties"/>
+        <config key="meta_data"/>
+    </config>
+    <config key="column_spec_3">
         <entry key="column_name" type="xstring" value="Year"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
@@ -82,7 +94,7 @@
         <config key="column_properties"/>
         <config key="meta_data"/>
     </config>
-    <config key="column_spec_3">
+    <config key="column_spec_4">
         <entry key="column_name" type="xstring" value="Year (week-based)"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
@@ -107,7 +119,7 @@
         <config key="column_properties"/>
         <config key="meta_data"/>
     </config>
-    <config key="column_spec_4">
+    <config key="column_spec_5">
         <entry key="column_name" type="xstring" value="Quarter"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
@@ -132,7 +144,7 @@
         <config key="column_properties"/>
         <config key="meta_data"/>
     </config>
-    <config key="column_spec_5">
+    <config key="column_spec_6">
         <entry key="column_name" type="xstring" value="Month (number)"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
@@ -157,7 +169,7 @@
         <config key="column_properties"/>
         <config key="meta_data"/>
     </config>
-    <config key="column_spec_6">
+    <config key="column_spec_7">
         <entry key="column_name" type="xstring" value="Month (name)"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
@@ -245,7 +257,7 @@
         <config key="column_properties"/>
         <config key="meta_data"/>
     </config>
-    <config key="column_spec_7">
+    <config key="column_spec_8">
         <entry key="column_name" type="xstring" value="Week"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
@@ -270,7 +282,7 @@
         <config key="column_properties"/>
         <config key="meta_data"/>
     </config>
-    <config key="column_spec_8">
+    <config key="column_spec_9">
         <entry key="column_name" type="xstring" value="Day of year"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
@@ -295,7 +307,7 @@
         <config key="column_properties"/>
         <config key="meta_data"/>
     </config>
-    <config key="column_spec_9">
+    <config key="column_spec_10">
         <entry key="column_name" type="xstring" value="Day of month"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
@@ -320,7 +332,7 @@
         <config key="column_properties"/>
         <config key="meta_data"/>
     </config>
-    <config key="column_spec_10">
+    <config key="column_spec_11">
         <entry key="column_name" type="xstring" value="Day of week (number)"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
@@ -345,7 +357,7 @@
         <config key="column_properties"/>
         <config key="meta_data"/>
     </config>
-    <config key="column_spec_11">
+    <config key="column_spec_12">
         <entry key="column_name" type="xstring" value="Day of week (name)"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
@@ -403,7 +415,7 @@
         <config key="column_properties"/>
         <config key="meta_data"/>
     </config>
-    <config key="column_spec_12">
+    <config key="column_spec_13">
         <entry key="column_name" type="xstring" value="temporada"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>

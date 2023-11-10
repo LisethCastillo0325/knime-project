@@ -8,12 +8,44 @@
         <entry key="authored-by" type="xstring" value="karenabraham"/>
         <entry key="authored-when" type="xstring" value="2022-07-05 12:12:31 +0200"/>
         <entry key="lastEdited-by" type="xstring" value="lcastillo"/>
-        <entry key="lastEdited-when" type="xstring" value="2023-11-10 01:56:31 -0500"/>
+        <entry key="lastEdited-when" type="xstring" value="2023-11-10 11:54:42 -0500"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <config key="workflow_credentials"/>
     <config key="nodes">
+        <config key="node_1">
+            <entry key="id" type="xint" value="1"/>
+            <entry key="node_settings_file" type="xstring" value="PostgreSQL Connector (#1)/settings.xml"/>
+            <entry key="node_is_meta" type="xboolean" value="false"/>
+            <entry key="node_type" type="xstring" value="NativeNode"/>
+            <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+            <config key="ui_settings">
+                <config key="extrainfo.node.bounds">
+                    <entry key="array-size" type="xint" value="4"/>
+                    <entry key="0" type="xint" value="435"/>
+                    <entry key="1" type="xint" value="369"/>
+                    <entry key="2" type="xint" value="-1"/>
+                    <entry key="3" type="xint" value="-1"/>
+                </config>
+            </config>
+        </config>
+        <config key="node_7">
+            <entry key="id" type="xint" value="7"/>
+            <entry key="node_settings_file" type="xstring" value="dim_ips (#7)/workflow.knime"/>
+            <entry key="node_is_meta" type="xboolean" value="true"/>
+            <entry key="node_type" type="xstring" value="MetaNode"/>
+            <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+            <config key="ui_settings">
+                <config key="extrainfo.node.bounds">
+                    <entry key="array-size" type="xint" value="4"/>
+                    <entry key="0" type="xint" value="710"/>
+                    <entry key="1" type="xint" value="324"/>
+                    <entry key="2" type="xint" value="-1"/>
+                    <entry key="3" type="xint" value="-1"/>
+                </config>
+            </config>
+        </config>
         <config key="node_48">
             <entry key="id" type="xint" value="48"/>
             <entry key="node_settings_file" type="xstring" value="PostgreSQL Connector (#48)/settings.xml"/>
@@ -23,8 +55,8 @@
             <config key="ui_settings">
                 <config key="extrainfo.node.bounds">
                     <entry key="array-size" type="xint" value="4"/>
-                    <entry key="0" type="xint" value="445"/>
-                    <entry key="1" type="xint" value="489"/>
+                    <entry key="0" type="xint" value="435"/>
+                    <entry key="1" type="xint" value="514"/>
                     <entry key="2" type="xint" value="-1"/>
                     <entry key="3" type="xint" value="-1"/>
                 </config>
@@ -39,8 +71,8 @@
             <config key="ui_settings">
                 <config key="extrainfo.node.bounds">
                     <entry key="array-size" type="xint" value="4"/>
-                    <entry key="0" type="xint" value="735"/>
-                    <entry key="1" type="xint" value="424"/>
+                    <entry key="0" type="xint" value="705"/>
+                    <entry key="1" type="xint" value="439"/>
                     <entry key="2" type="xint" value="-1"/>
                     <entry key="3" type="xint" value="-1"/>
                 </config>
@@ -55,8 +87,8 @@
             <config key="ui_settings">
                 <config key="extrainfo.node.bounds">
                     <entry key="array-size" type="xint" value="4"/>
-                    <entry key="0" type="xint" value="730"/>
-                    <entry key="1" type="xint" value="559"/>
+                    <entry key="0" type="xint" value="710"/>
+                    <entry key="1" type="xint" value="549"/>
                     <entry key="2" type="xint" value="-1"/>
                     <entry key="3" type="xint" value="-1"/>
                 </config>
@@ -65,16 +97,28 @@
     </config>
     <config key="connections">
         <config key="connection_0">
-            <entry key="sourceID" type="xint" value="48"/>
-            <entry key="destID" type="xint" value="52"/>
+            <entry key="sourceID" type="xint" value="1"/>
+            <entry key="destID" type="xint" value="7"/>
             <entry key="sourcePort" type="xint" value="1"/>
             <entry key="destPort" type="xint" value="0"/>
         </config>
         <config key="connection_1">
             <entry key="sourceID" type="xint" value="48"/>
+            <entry key="destID" type="xint" value="52"/>
+            <entry key="sourcePort" type="xint" value="1"/>
+            <entry key="destPort" type="xint" value="0"/>
+        </config>
+        <config key="connection_2">
+            <entry key="sourceID" type="xint" value="48"/>
             <entry key="destID" type="xint" value="53"/>
             <entry key="sourcePort" type="xint" value="1"/>
             <entry key="destPort" type="xint" value="0"/>
+        </config>
+        <config key="connection_3">
+            <entry key="sourceID" type="xint" value="48"/>
+            <entry key="destID" type="xint" value="7"/>
+            <entry key="sourcePort" type="xint" value="1"/>
+            <entry key="destPort" type="xint" value="1"/>
         </config>
     </config>
     <config key="workflow_editor_settings">
